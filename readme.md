@@ -1,30 +1,29 @@
-# CIS2520-F24-A4
+# Graph Algorithms in C
 
-## Student Information 
-Name : Daniella Toth
+A menu-driven C program that reads a weighted graph from an adjacency 
+matrix file and performs classic graph algorithms using a dynamic 
+linked-list adjacency list representation.
 
-Student Number : 1261398
+## Algorithms Implemented
+- Breadth-First Search (BFS)
+- Depth-First Search (DFS)  
+- Dijkstra's Shortest Path Algorithm
 
-## Assignment Overview
-What is the assignment about?  
-Explain the purpose of the program and what it accomplishes.
+## Features
+- Parses adjacency matrix from a .txt file into a linked-list structure
+- Interactive menu-driven interface
+- Dynamic memory allocation throughout
+- Clean separation of graph construction and traversal logic
 
-This assignment is to write a C program that works with a graph stored as an adjacency matrix in a .txt file. The program should show a menu with options to display the graph as an adjacency list, do Breadth-First Search (BFS) and Depth-First Search (DFS) starting from vertex 1, and find the shortest paths from vertex 1 using Dijkstra's algorithm. The program must use linked lists and follow proper coding and documentation rules.
+## How to Run
+```bash
+gcc -o graph main.c
+./graph input.txt
+```
 
-## Resources 
-Did you use any resources (for example book, notes etc) in this assignment?
-
-    Resources I used for this assignment:
-
-    Slides 28 and 36 of GraphIntro lecure slides for pseudocode on dfs and bfs algorithms
-    - https://courselink.uoguelph.ca/d2l/le/content/911255/viewContent/3980006/View
-
-    Slide 23 of GraphPath lecture slides for pseudocode on Dijkstra's algorithm
-    - https://courselink.uoguelph.ca/d2l/le/content/911255/viewContent/3985634/View 
-
-    adjacency list:
-    - https://www.geeksforgeeks.org/c-program-to-implement-adjacency-list/
-
-## Implementation
-Is the assignment complete? If not, mention what part of the assignment is missing or incomplete.
-- The assignment is complete, nothing is missing
+## Concepts Demonstrated
+- Graph theory and representation
+- Recursive and iterative traversal
+- Greedy shortest path logic
+- Pointers, dynamic allocation, and linked lists in C
+- File I/O
